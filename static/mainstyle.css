@@ -1,0 +1,433 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #1a1a1a;
+}
+div.section1{
+   width: 100%; 
+   height: 100vh;
+   background-image: url('/static/mainbg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+}
+div.section2{
+   width: auto; 
+   height: 100vh;
+   background-image: url('/static/Image.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+}
+div.section3{
+  width: 100%; 
+  height: 100vh;
+  background-image: url('/static/page3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+div.section4{
+  width: 100%; 
+  height: 100vh;
+  background-image: url('/static/page4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+div.section5{
+  width: 100%; 
+  height: 100vh;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+ .centered-div {
+   color: white;
+   padding: 40px;
+   font-family: 'Poppins';
+   font-size: 14px;
+   font-style: normal;
+ }
+div.menu{
+   color: aliceblue;
+   text-align: center;
+}
+
+div.logo {
+   padding-top: 20px;
+   padding-left: 40px;
+   size: 40px;
+   height: 20px;
+   width: 30px;
+}
+
+div.wethink {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+.arrow-down {
+   display: inline-block;
+   width: 20px; 
+   height: 20px;
+   background-image: url('/static/arrow.svg'); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left: 2px;
+   vertical-align: middle;
+ }
+ .custom-link {
+   text-decoration: none; 
+   color: antiquewhite;
+   font-family: sans-serif;
+ }
+ div.welcome{
+   position: absolute;
+   margin-top: 200px;
+   margin-left: 50px;
+ }
+ .welcome_image{
+  height: 50px;
+  width: 400px
+ }
+ div.welcometext{
+   margin-left: 20px;
+   margin-top: 35px;
+   color: rgb(204, 200, 200);
+   font-size: 20px;
+   font-family: 'Poppins';
+ }
+ div.usapart{
+   margin-top: 125px;
+   margin-left: 20px;
+ }
+ .usapart_image{
+  height: 40px;
+  width: 400px
+ }
+ div.aparttext{
+   margin-left: 2px;
+   margin-top: 35px;
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+   font-family: 'Poppins';
+ }
+ div.icons{
+  text-align: center;
+ }
+ img.serviceimage{
+   margin-top: 230px; 
+   height:  80px;
+   width: 700px;      
+ }
+ .myButton {
+   position: relative;
+   background-color: transparent;
+   background-image: linear-gradient(to bottom, rgba(117, 117, 117, 0.2), transparent);
+   opacity: 5;
+   border: 0px solid transparent;
+   border-radius: 12px;
+   color: white;
+   width: 250px;
+   height: 200px;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   transition: 0.5s;
+   overflow: hidden;
+   margin: 0;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-family: 'Poppins';
+ }
+ .myButton:hover {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(117, 117, 117, 0.2), transparent);
+ }
+ .iconic {
+   margin-top: 25px;
+ }
+ .myButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transition: 0.5s;
+ }
+ .myButton:hover::before {
+   left: 100%;
+ }
+ .lolies {
+   width: 70px;
+ }
+ .portiii {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ figure {
+	 width: 400px;
+   height: 500px;
+	 margin: 0;
+	 padding: 0;
+	 background: transparent;
+	 overflow: hidden;
+ }
+ .hover09 figure img {
+   -webkit-transform: scale(1.5);
+	 transform: scale(1.5);
+	 -webkit-filter: sepia(100%);
+	 filter: sepia(100%);
+	 -webkit-transition: .3s ease-in-out;
+	 transition: .3s ease-in-out;
+ }
+.hover09 figure:hover img {
+	 -webkit-filter: sepia(0);
+	 filter: sepia(0);
+   -webkit-transform: scale(1);
+	 transform: scale(1);
+ }
+ .lolies2 {
+  width: 400px;
+ }
+ .stylish_heading {
+  width: 400px;
+  font-family: 'Poppins';
+ }
+ .team_names {
+  font-family: 'Poppins';
+  font-size: 30px;
+  margin-top: 150px;
+  background: linear-gradient( to right, #ff8e44, #f91362, #35126a); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  font-weight: bolder;
+ }
+ .team_positions {
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: white;
+ }
+ .team_message {
+  font-family: 'Poppins';
+  font-size: 13px;
+  color: white;
+  font-style: italic;
+ }
+ .subfooterheader {
+  color: white;
+  font-family: 'Poppins';
+ }
+ .footer_email {
+  height: 30px !important;
+  width: 170px !important; 
+  font-size: 9pt;
+  border-radius: 9px;
+  border: 0px solid transparent;
+  padding: 3px;
+  font-family: 'Poppins';
+ }
+ .footer_button {
+  width: 80px !important; 
+  height: 30px !important; 
+  background-color:#000000;
+  color: white; 
+  font-size: 9pt; 
+  border-radius: 9px; 
+  border: 0px solid transparent;
+  font-family: 'Poppins';
+  font-weight: 300;
+ }
+ .copy_rights {
+  font-size: smaller;
+ }
+ .footer_email::placeholder {
+  padding-left: 10px;
+ }
+
+ @media only screen and (max-width: 1300px) {
+  div.welcome{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 50px;
+  }
+  .welcome_image{
+    height: 45px;
+    width: 400px
+  }
+  div.welcometext{
+    margin-left: 20px;
+    margin-top: 25px;
+    color: rgb(204, 200, 200);
+    font-size: 17px;
+  }
+  div.usapart{
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .usapart_image{
+    height: 40px;
+    width: 400px
+  }
+  div.aparttext{
+    margin-left: 2px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+  img.serviceimage{
+    margin-top: 200px; 
+    height:  62.3px;
+    width: 448px;      
+  }
+  .lolies {
+    width: 40px;
+  }
+  .lolies2 {
+    width: 300px;
+  }
+  figure {
+    width: 250px;
+    height: 350px;
+  }
+  .iconic {
+    margin-top: 45px;
+  }
+  .myButton {
+    width: 150px;
+    height: 100px;
+  }
+  .stylish_heading {
+    width: 250px;
+  }
+ }
+ 
+ @media only screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+ }
+  div.section1{
+    width: 100%; 
+    height: 100vh;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+ }
+ div.section2{
+    width: auto; 
+    background-image: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+ }
+ div.section3{
+   width: auto; 
+   height: auto;
+   background-image: none;
+   margin: 0;
+   padding: 0;
+ }
+ div.section4{
+   width: auto; 
+   height: auto;
+   background-image: none;
+   margin: 0;
+   padding: 0;
+ }
+ div.section5{
+   width: auto; 
+   height: auto;
+   background-image: none;
+   background-color: transparent;
+   margin: 0;
+   padding: 0;
+ }
+ div.welcome{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 50px;
+ }
+ .welcome_image{
+    height: 55px;
+    width: 500px
+  }
+  div.welcometext{
+    margin-left: 20px;
+    margin-top: 25px;
+    color: rgb(204, 200, 200);
+    font-size: 20px;
+  }
+  div.usapart{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .usapart_image{
+    height: 50px;
+    width: 500px
+  }
+  div.aparttext{
+    margin-left: 2px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  img.serviceimage{
+    margin-top: 200px; 
+    height:  62.3px;
+    width: 448px;      
+  }
+  .lolies {
+    width: 70px;
+  }
+  figure {
+    width: 250px;
+    height: 350px;
+  }
+  .iconic {
+    margin-top: 25px;
+  }
+  .myButton {
+    width: 250px;
+    height: 200px;
+  }
+  .stylish_heading {
+    width: 250px;
+  }
+  .portiii {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 50px;
+  }
+  figure {
+    width: 350px;
+    height: 450px;
+  }
+  .lolies2 {
+    width: 400px;
+  }
+  .stylish_heading {
+    margin-top: 50px;
+    width: 350px;
+  }
+ }
+
+
