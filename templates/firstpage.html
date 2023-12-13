@@ -19,7 +19,7 @@
 }
 .carousel-cell {
     position: absolute;
-    width: 700px;
+    width: 800px;
     height: 500px;
     top: 0;
     left: 0;
@@ -54,12 +54,20 @@
                     
 </style>
 <body>
-    <div class="section1">
+<div class="section1">
     <div>
         <div class="logo">
             <img src="static/logo.png" alt="mainlogo" width="180px" height="90px">
-
         </div>
+        <nav>
+            <ul>
+                <li><a onclick="scrollToSection('section2')">About Us</a></li>
+                <li><a onclick="scrollToSection('section3')">Our Services</a></li>
+                <li><a onclick="scrollToSection('section4')">Our Portfolio</a></li>
+                <li><a onclick="scrollToSection('section5')">Out Team</a></li>
+                <li><a onclick="scrollToSection('section6')">Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="wethink">
         <img src="static/we think unique.png" alt="wethink" width="600px" height="350px">
@@ -67,7 +75,7 @@
 </div>
 
 
-<div class="section2">
+<div class="section2" id="section2">
     <div class="welcome">
         <img class="welcome_image" src="static/Welcome.png" alt="welcomes">
         <div class="welcometext">
@@ -90,7 +98,7 @@
 </div>
 
 
-<div class="section3">
+<div class="section3" id="section3">
     <div class="icons">
         <img src="static/services.png" alt="Centered Image" class="serviceimage">
     </div>
@@ -126,7 +134,7 @@
     </div>
 </div>
 
-<div class="section4">
+<div class="section4" id="section4">
     <div class="container-fluid portiii" style="padding-left: 15%; padding-right: 15%;">
         <div class="row">
             <div class="col">
@@ -160,7 +168,7 @@
     </div>
 </div>
 
-<div class="section5">
+<div class="section5" id="section5">
     <div class="container-fluid portiii">
         <div class="carousel" style="margin-bottom: 25px;">
             <div class="container-fluid carousel-cell">
@@ -212,17 +220,19 @@
     </div>
 </div>
 
-<div class="section6">
+<div class="section6" id="section6">
     <div style="background: linear-gradient( to right, #f91362, #c12466);">
         <div class="container" style="padding-top: 1%; padding-bottom: 1%;">
             <div class="row">
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <form method="post" autocomplete="off" name="base"  style="padding:5px; border-radius: 12px; padding: 15px;">
+                            <form method="post" autocomplete="off" id="inquiry" name="google-sheet"  style="padding:5px; border-radius: 12px; padding: 15px;">
                                 <p class="subfooterheader" style="margin-bottom: 10px !important;">Get the latest property alerts!</p>
-                                <input type="text" name="email" class="footer_email" placeholder="Enter Email Address" required>
-                                <input type="submit" value="Subscribe" class="footer_button">
+                                <input type="email" id="email_client" name="email_client" class="footer_email" placeholder="Enter Email Address" required>
+                                <input type="hidden" id="date" name="date">
+                                <input type="hidden" id="time" name="time">
+                                <input type="submit" class="footer_button" value="Subscribe">
                             </form>
                         </div>
                     </div>
@@ -244,8 +254,8 @@
                             <a style="text-decoration: none;" href=""><i class="bi bi-instagram" style="font-size: 1rem; margin-right: 7px; color: #fff;"></i></a>
                             <a style="text-decoration: none;" href=""><i class="bi bi-snapchat" style="font-size: 1rem; color: #fff;"></i></i></a>
                         </li>
-                        <li class="subfooterheader"><a style="text-decoration: none; color: white; font-size: 11px; font-weight: 500; margin-top: 7px;" href="">Phone - +971547914952</a></li>
-                        <li class="subfooterheader"><a style="text-decoration: none; color: white; font-size: 11px; font-weight: 500;" href="">Email - info@uhpae.com</a></li>
+                        <li class="subfooterheader"><a style="text-decoration: none; color: white; font-size: 11px; font-weight: 500; margin-top: 7px;" href="tel:+971547914952">Phone - +971547914952</a></li>
+                        <li class="subfooterheader"><a style="text-decoration: none; color: white; font-size: 11px; font-weight: 500;" href="mailto:info@uhemedia.com">Email - info@uhemedia.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -253,7 +263,7 @@
     </div>
     <div class="container-fluid" style="background: linear-gradient( to right, #f91362, #c12466); ">
         <div class="row justify-content-center">
-            <p style="margin: auto; padding-bottom: 15px; color: #fff;" class="copy_rights" >&copy; Copyright 2023 - Unique Homes Properties.  All rights reserved.</p>
+            <p style="margin: auto; padding-bottom: 15px; color: #fff;" class="copy_rights" >&copy; Copyright 2023 - Unique Hashtagers.  All rights reserved.</p>
         </div>
     </div>
 </div>
@@ -268,6 +278,33 @@ $('.carousel').flickity({
   freeScroll:true,
   pageDots: false
 });
+
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyR6_2ByESc8rl-um9xsg-00rdNbMrLlUyjofiouK3WSOQZ6YxOY7djRYvUA8-ixrxvFQ/exec'
+const form = document.forms['google-sheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    const currentDateTime = new Date();
+    currentDateTime.setHours(currentDateTime.getHours() + 4);
+    const date = currentDateTime.toISOString().split('T')[0]; 
+    const time = currentDateTime.toISOString().split('T')[1].split('.')[0]; 
+    document.forms["google-sheet"]["date"].value = date;
+    document.forms["google-sheet"]["time"].value = time;
+    fetch(scriptURL, { method: 'POST', mode:"no-cors",body: new FormData(form)})
+    .then(response => alert("Thanks For Your Submission! We Will Contact You Soon.")).then(clear_inputs())
+    .catch(error => console.error('Error!', error.message))
+}
+)
+function clear_inputs(){
+    document.getElementById("inquiry").reset();
+    }
 </script>
 
 </html>

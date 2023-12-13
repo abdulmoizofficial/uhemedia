@@ -48,13 +48,48 @@ div.section5{
   padding: 0;
   position: relative;
 }
- .centered-div {
+nav {
+  color: #fff;
+  padding: 20px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make the list items flex containers */
+  justify-content: center; /* Center the items horizontally */
+}
+
+nav li {
+  margin-right: 100px;
+  cursor: pointer; /* Set the cursor style */
+      transition: color 0.3s; /* Add a smooth color transition */
+}
+nav li:hover {
+  text-decoration: underline; /* Underline text on hover */
+  background: linear-gradient( to right, #ff8e44, #f91362); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.centered-div {
    color: white;
    padding: 40px;
    font-family: 'Poppins';
    font-size: 14px;
    font-style: normal;
- }
+}
 div.menu{
    color: aliceblue;
    text-align: center;
@@ -64,8 +99,8 @@ div.logo {
    padding-top: 20px;
    padding-left: 40px;
    size: 40px;
-   height: 20px;
-   width: 30px;
+   height: 10px;
+   width: 15px;
 }
 
 div.wethink {
@@ -310,6 +345,9 @@ div.wethink {
   }
   .stylish_heading {
     width: 250px;
+  }
+  nav li {
+    margin-right: 30px;
   }
  }
  
