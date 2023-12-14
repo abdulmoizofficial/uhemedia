@@ -6,9 +6,6 @@ body {
 div.section1{
    width: 100%; 
    height: 100vh;
-   background-image: url('/static/mainbg.png');
-   background-repeat: no-repeat;
-   background-size: cover;
    margin: 0;
    padding: 0;
 }
@@ -290,6 +287,17 @@ div.wethink {
  .footer_email::placeholder {
   padding-left: 10px;
  }
+ video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+ }
 
  @media only screen and (max-width: 1300px) {
   div.welcome{
@@ -355,21 +363,18 @@ div.wethink {
   body {
     margin: 0;
     padding: 0;
-    background-image: url('/static/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
  }
   div.section1{
     width: 100%; 
     height: 100vh;
-    background-image: none;
     margin: 0;
     padding: 0;
  }
  div.section2{
     width: auto; 
     background-image: none;
+    background-color: rgba(26,26,26,0.7);
     height: auto;
     margin: 0;
     padding: 0;
@@ -378,6 +383,7 @@ div.wethink {
    width: auto; 
    height: auto;
    background-image: none;
+   background-color: rgba(26,26,26,0.7);
    margin: 0;
    padding: 0;
  }
@@ -385,6 +391,7 @@ div.wethink {
    width: auto; 
    height: auto;
    background-image: none;
+   background-color: rgba(26,26,26,0.7);
    margin: 0;
    padding: 0;
  }
@@ -393,6 +400,7 @@ div.wethink {
    height: auto;
    background-image: none;
    background-color: transparent;
+   background-color: rgba(26,26,26,0.7);
    margin: 0;
    padding: 0;
  }
@@ -465,6 +473,36 @@ div.wethink {
   .stylish_heading {
     margin-top: 50px;
     width: 350px;
+  }
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: auto;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+   }
+   nav {
+    color: #fff;
+    margin-left: 175px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+  }
+  nav li {
+    margin-right: 25px;
+    cursor: pointer; /* Set the cursor style */
+        transition: color 0.3s; /* Add a smooth color transition */
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20;
   }
  }
 
