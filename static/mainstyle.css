@@ -374,10 +374,11 @@ div.wethink {
  div.section2{
     width: auto; 
     background-image: none;
-    background-color: rgba(26,26,26,0.7);
+    background: linear-gradient( to bottom, transparent, rgba(26,26,26,0.3), rgba(26,26,26,0.7)); 
     height: auto;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid rgba(26,26,26);
  }
  div.section3{
    width: auto; 
@@ -386,6 +387,7 @@ div.wethink {
    background-color: rgba(26,26,26,0.7);
    margin: 0;
    padding: 0;
+   border: 1px solid rgba(26,26,26);
  }
  div.section4{
    width: auto; 
@@ -394,19 +396,20 @@ div.wethink {
    background-color: rgba(26,26,26,0.7);
    margin: 0;
    padding: 0;
+   border: 1px solid rgba(26,26,26);
  }
  div.section5{
    width: auto; 
    height: auto;
    background-image: none;
-   background-color: transparent;
    background-color: rgba(26,26,26,0.7);
    margin: 0;
    padding: 0;
+   border: 1px solid rgba(26,26,26);
  }
  div.welcome{
     position: relative;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 50px;
  }
  .welcome_image{
@@ -433,9 +436,10 @@ div.wethink {
     margin-top: 10px;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    padding-bottom: 50px;
   }
   img.serviceimage{
-    margin-top: 200px; 
+    margin-top: 50px; 
     height:  62.3px;
     width: 448px;      
   }
@@ -447,11 +451,13 @@ div.wethink {
     height: 350px;
   }
   .iconic {
-    margin-top: 25px;
+    margin-top: 35px;
+    padding-bottom: 50px;
   }
   .myButton {
     width: 250px;
     height: 200px;
+    margin-top: 35px;
   }
   .stylish_heading {
     width: 250px;
@@ -461,7 +467,8 @@ div.wethink {
     top: 0;
     left: 0;
     transform: none;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
   figure {
     width: 350px;
