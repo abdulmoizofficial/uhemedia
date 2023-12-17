@@ -299,7 +299,7 @@ div.wethink {
   z-index: -1;
  }
 
- @media only screen and (max-width: 1300px) {
+ @media only screen and (max-width: 1200px) {
   div.welcome{
     position: absolute;
     margin-top: 90px;
@@ -352,7 +352,7 @@ div.wethink {
     height: 100px;
   }
   .stylish_heading {
-    width: 250px;
+    width: 150px;
   }
   nav li {
     margin-right: 30px;
