@@ -299,7 +299,7 @@ div.wethink {
   z-index: -1;
  }
 
- @media only screen and (max-width: 1200px) {
+ @media only screen and (max-width: 1300px) {
   div.welcome{
     position: absolute;
     margin-top: 90px;
@@ -341,8 +341,8 @@ div.wethink {
     width: 300px;
   }
   figure {
-    width: 150px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
   }
   .iconic {
     margin-top: 45px;
@@ -352,7 +352,7 @@ div.wethink {
     height: 100px;
   }
   .stylish_heading {
-    width: 150px;
+    width: 250px;
   }
   nav li {
     margin-right: 30px;
@@ -522,6 +522,19 @@ div.wethink {
     transform: translate(-50%, -50%);
     z-index: -1;
    }
+ }
+
+ @media only screen and (max-width: 1200px) {
+  .lolies2 {
+    width: 250px;
+  }
+  figure {
+    width: 200px;
+    height: 300px;
+  }
+  .stylish_heading {
+    width: 200px;
+  }
  }
 
 
