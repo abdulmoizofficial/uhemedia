@@ -61,5 +61,15 @@ def sakher_landing_barcode(agent_name):
         return abort(404)
     return render_template('agentpage.html', image_link = image_link, name = name, number = number, email = email)
 
+@app.route('/reportage/<agent_name>')
+def client_page(agent_name):
+    if agent_name == 'm-zarooni':
+        name = 'Mohamed Al Zarooni'
+        number = '+971508007777'
+        email = 'mohamed@reportageuae.com'
+    else:
+        return abort(404)
+    return render_template('clientpage.html', name = name, number = number, email = email)
+
 if __name__ == '__main__':
     app.run(debug=True)
